@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>Banking Application</title>
+<style type="text/css">
+#div1{
+background-color:#a1a1a1;
+padding-top: 50px;
+padding-left: 550px;
+
+padding-bottom: 50px;
+}
+
+#div2{
+background-color:#a1a1a1;
+padding-top: 50px;
+padding-left: 630px;
+
+padding-bottom: 10px;
+}
+#div4{
+background-color:#5050f5;}
+#div5{
+padding-top: 5px;
+padding-bottom: 5px;
+background-color:#5050f5;}
+</style>
+
+<script>
+function validateForm() {
+    //var x = document.forms["myForm"]["div1"]["user_ID"].value;
+    var x= document.getElementById("user_ID").value;
+    //var y = document.forms["myForm"]["div1"]["password"].value;
+    var y= document.getElementById("password").value;
+    if (x == ""||y=="") {
+        alert("All fields are mandatory");
+        return false;
+    }
+}</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+<form action="BankServlet" method="post" onsubmit="return validateForm()" name="myForm">
+<div id="div4">
+<h1 align="center" >Banking Internal Software</h1></div>
+
+<div id="div1">
+Login Id<sup style="color:red"> *</sup>: <input type="text" id="user_ID" name="user_ID" ></input><br>
+<div style="padding-top: 10px">
+Password<sup style="color:red">*</sup>:<input type="password" id="password" name="password" ></input><br></div></div>
+<input type="hidden" name="action" value="login">
+<div id="div2">
+<input type="submit" id="i3" name="submit" value="login"></input></div>
+
+<div id="div5">
+<h6 >Copyright@ HJA16 Group B</h6>
+</div>
+</form>
+</body>
+</html>
