@@ -1,2 +1,1 @@
-# ABC_Bank
-# ABC_Bank
+This was the project that i made to emulate a banking scenario The project completely uses the JAVA stack and also bootstrap for styling It is a medium on behalf of 2 people 1- Customer 2- Bank Employee The customer can create an account update the contact details and Deposit and WithDraw money The Bank employee can help the custoemr in updating the details approve from the system and all the necessary features that we see in our day-to-day life related to banking scenario
